@@ -1,0 +1,63 @@
+<!DOCTYPE web-app PUBLIC
+ "-//Sun Microsystems, Inc.//DTD Web Application 2.3//EN"
+ "http://java.sun.com/dtd/web-app_2_3.dtd" >
+
+<web-app>
+	<display-name>Archetype Created Web Application</display-name>
+
+
+	<!-- Servlet Configuration -->
+	<servlet>
+		<servlet-name>saveCity</servlet-name>
+		<servlet-class>com.javarnd.controller.CitySaveController</servlet-class>
+	</servlet>
+	<servlet>
+		<servlet-name>saveLanguage</servlet-name>
+		<servlet-class>com.javarnd.controller.LanguageSaveController</servlet-class>
+	</servlet>
+	<servlet>
+		<servlet-name>saveCountry</servlet-name>
+		<servlet-class>com.javarnd.controller.CountrySaveController</servlet-class>
+	</servlet>
+	<servlet>
+		<servlet-name>saveSports</servlet-name>
+		<servlet-class>com.javarnd.controller.SportsSaveController</servlet-class>
+	</servlet>
+	<servlet>
+		<servlet-name>userLogin</servlet-name>
+		<servlet-class>com.javarnd.controller.UserLoginController</servlet-class>
+	</servlet>
+	<servlet>
+		<servlet-name>getCountry</servlet-name>
+		<servlet-class>com.javarnd.controller.GetCountryController</servlet-class>
+	</servlet>
+
+	<!-- Servlet URL Pattern Congfiguration -->
+	<servlet-mapping>
+		<servlet-name>saveCity</servlet-name>
+		<url-pattern>/saveCity</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>saveLanguage</servlet-name>
+		<url-pattern>/saveLanguage</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>saveCountry</servlet-name>
+		<url-pattern>/saveCountry</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>saveSports</servlet-name>
+		<url-pattern>/saveSports</url-pattern>
+	</servlet-mapping>
+
+	<servlet-mapping>
+		<servlet-name>getCountry</servlet-name>
+		<url-pattern>/getCountry</url-pattern>
+	</servlet-mapping>
+
+	<servlet-mapping>
+		<servlet-name>userLogin</servlet-name>
+		<url-pattern>/userLogin</url-pattern>
+	</servlet-mapping>
+
+</web-app>
